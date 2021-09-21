@@ -5,10 +5,12 @@ header, footer{
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
     padding: 0;
     overflow: hidden;
     background-color: #8a3333;
+    justify-content: center;
   }
   
   li {
