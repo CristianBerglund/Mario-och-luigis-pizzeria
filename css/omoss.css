@@ -16,13 +16,37 @@ header{
     background-color: #8a3333;
 }
 
-header, main, footer, #mainpic, #maintext, #article1, #article2{
+header, main, footer, #mainpic, #maintext, #section1container, #section2container{
 	min-height: 150px;
 }
 
 #mainpic{
     display: flex;
     justify-content: center;
+}
+#mainpic img{
+    width: 40%;
+}
+
+#section1container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+#article1{
+    align-items: center;
+    width: 50%;
+}
+
+#article2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#article2 img{
+    width: 40%;
 }
 
 /*Breda desktopskärmar*/
@@ -47,12 +71,12 @@ header, main, footer, #mainpic, #maintext, #article1, #article2{
 		grid-row: 4 / 6;
     }
 
-    #article1{
+    #section1container{
         grid-column: 1 / 13;
 		grid-row: 6 / 8;
     }
 
-    #article2{
+    #section2container{
         grid-column: 1 / 13;
 		grid-row: 8 / 10;
     }
