@@ -6,6 +6,7 @@
     width: 100%;
     border: 1px solid black;
     display: grid;
+    row-gap: 20px;
 }
 
 body{
@@ -18,11 +19,21 @@ header{
     background-color: #8a3333;
 }
 
-
 header, main, footer, #mainpic, #maintext, #article1, #article2{
 	border: 1px solid black;
 	min-height: 150px;
 }
+
+#mainpic{
+    display: flex;
+    justify-content: center;
+}
+
+/*#maintext{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}*/
 
 /*Breda desktopskärmar*/
 @media screen and (min-width: 1201px){
@@ -48,7 +59,7 @@ header, main, footer, #mainpic, #maintext, #article1, #article2{
     }
 
     #maintext{
-        grid-column: 1 / 13;
+        grid-column: 5 / 13;
 		grid-row: 3 / 4;
     }
 
