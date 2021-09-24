@@ -12,11 +12,11 @@ body{
     margin: 0 auto;
 }
 
-header{
+header, footer{
     background-color: #8a3333;
 }
 
-header, main, footer, #mainpic, #maintext, #section1container, #section2container{
+header, main, footer, #mainpic, #maintext, #sectioncontainer{
 	min-height: 150px;
 }
 
@@ -28,26 +28,38 @@ header, main, footer, #mainpic, #maintext, #section1container, #section2containe
     width: 40%;
 }
 
-#section1container{
+#sectioncontainer{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    row-gap: 50px;
 }
 
 #article1{
-    align-items: center;
-    width: 50%;
+    width: 65%;
+    padding: 10%;
 }
 
 #article2{
-    display: flex;
-    justify-content: center;
-    width: 50%;
+    width: 35%;
 }
 
 #article2 img{
-    width: 40%;
+    width: 70%;
 }
+
+#article3{
+    width: 42.5%;
+}
+
+#article3 img{
+    width: 100%;
+}
+
+#article4{
+    width: 57.5%;
+    padding: 10%;
+}
+
 
 /*Breda desktopskärmar*/
 @media screen and (min-width: 1201px){
@@ -71,14 +83,9 @@ header, main, footer, #mainpic, #maintext, #section1container, #section2containe
 		grid-row: 4 / 6;
     }
 
-    #section1container{
+    #sectioncontainer{
         grid-column: 1 / 13;
-		grid-row: 6 / 8;
-    }
-
-    #section2container{
-        grid-column: 1 / 13;
-		grid-row: 8 / 10;
+		grid-row: 6 / 10;
     }
 
     footer{
