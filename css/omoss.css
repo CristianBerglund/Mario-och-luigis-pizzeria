@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+:root{
+    --photo-border-radius: 5%;
+}
+
 #omosscontainer{
     display: grid;
     row-gap: 20px;
@@ -16,7 +20,7 @@ header, footer{
     background-color: #8a3333;
 }
 
-header, main, footer, #mainpic, #maintext, #sectioncontainer{
+header, footer, #mainpic, #maintext, #section2container{
 	min-height: 150px;
 }
 
@@ -24,11 +28,13 @@ header, main, footer, #mainpic, #maintext, #sectioncontainer{
     display: flex;
     justify-content: center;
 }
+
 #mainpic img{
     width: 40%;
+    border-radius: var(--photo-border-radius);
 }
 
-#sectioncontainer{
+#section2container{
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
@@ -45,6 +51,7 @@ header, main, footer, #mainpic, #maintext, #sectioncontainer{
 
 #article2 img{
     width: 70%;
+    border-radius: var(--photo-border-radius);
 }
 
 #article3{
@@ -53,11 +60,33 @@ header, main, footer, #mainpic, #maintext, #sectioncontainer{
 
 #article3 img{
     width: 100%;
+    border-radius: var(--photo-border-radius);
 }
 
 #article4{
     width: 57.5%;
     padding: 10%;
+}
+
+#section3container{
+    display: flex;
+    flex-direction: column;
+}
+
+#article5{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(209, 198, 183);
+}
+
+#article6{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#article6 video{
+    width: 50%;
 }
 
 
@@ -73,6 +102,11 @@ header, main, footer, #mainpic, #maintext, #sectioncontainer{
 		grid-row: 1 / 2;
 	}
 
+    main{
+        grid-column: 1 / 13;
+		grid-row: 2 / 10;
+    }
+
     #mainpic{
         grid-column: 1 / 13;
 		grid-row: 2 / 4;
@@ -83,16 +117,24 @@ header, main, footer, #mainpic, #maintext, #sectioncontainer{
 		grid-row: 4 / 6;
     }
 
-    #sectioncontainer{
+    #section2container{
         grid-column: 1 / 13;
 		grid-row: 6 / 10;
     }
 
+    #section3container{
+        grid-column: 1 / 13;
+		grid-row: 10 / 14;
+    }
     footer{
         grid-column: 1 / 13;
-		grid-row: 10 / 12;
+		grid-row: 14 / 16;
     }
 }
+
+
+
+
 
 /*header{
     grid-area: header;
