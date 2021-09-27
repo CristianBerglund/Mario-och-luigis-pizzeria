@@ -28,7 +28,7 @@ h3 {
 .box4 {
      background-color: rgba(240, 239, 236, 0.795);
      border: 1px solid black;
-     border-radius: 2%;
+     border-radius: 1%;
 }
 
 header {
@@ -67,6 +67,6 @@ footer {
 .box2,
 .box3,
 .box4 {
-    min-height: 100px;
-    flex: 1 1 260px;
+    min-height: 150px;
+    flex: 1 1 300px;
 }
