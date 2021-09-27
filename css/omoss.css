@@ -2,6 +2,25 @@
 	box-sizing: border-box;
 }
 
+:root{
+    --photo-border-radius: 5%;
+}
+
+@font-face {
+    font-family: "VelinoText-Bold";
+    src: url("../Fonts/VelinoText-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "desire_regular";
+    src: url("../Fonts/desire_regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: "flying_dutchman";
+    src: url("../Fonts/flying_dutchman.woff") format('woff');
+}
+
 #omosscontainer{
     display: grid;
     row-gap: 20px;
@@ -12,11 +31,11 @@ body{
     margin: 0 auto;
 }
 
-header{
+header, footer{
     background-color: #8a3333;
 }
 
-header, main, footer, #mainpic, #maintext, #article1, #article2{
+header, footer, #mainpic, #maintext, #section2container{
 	min-height: 150px;
 }
 
@@ -24,6 +43,83 @@ header, main, footer, #mainpic, #maintext, #article1, #article2{
     display: flex;
     justify-content: center;
 }
+
+#mainpic img{
+    width: 40%;
+    border-radius: var(--photo-border-radius);
+}
+
+#section2container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+#article1{
+    width: 65%;
+    padding: 10%;
+}
+
+#article2{
+    width: 35%;
+}
+
+#article2 img{
+    width: 70%;
+    border-radius: var(--photo-border-radius);
+}
+
+#article3{
+    width: 42.5%;
+}
+
+#article3 img{
+    width: 100%;
+    border-radius: var(--photo-border-radius);
+}
+
+#article4{
+    width: 57.5%;
+    padding: 10%;
+}
+
+#section3container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#article5{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(209, 198, 183);
+}
+
+#forbes{
+    font-family: "VelinoText-Bold";
+    font-size: 60px;
+}
+
+#wallstreetjournal{
+    font-family: "desire_regular";
+    font-size: 60px;
+}
+
+#newyorktimes{
+    font-family: "flying_dutchman";
+    font-size: 60px;
+}
+
+#article6{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#article6 video{
+    width: 45%;
+}
+
 
 /*Breda desktopskärmar*/
 @media screen and (min-width: 1201px){
@@ -37,6 +133,11 @@ header, main, footer, #mainpic, #maintext, #article1, #article2{
 		grid-row: 1 / 2;
 	}
 
+    main{
+        grid-column: 1 / 13;
+		grid-row: 2 / 10;
+    }
+
     #mainpic{
         grid-column: 1 / 13;
 		grid-row: 2 / 4;
@@ -47,21 +148,26 @@ header, main, footer, #mainpic, #maintext, #article1, #article2{
 		grid-row: 4 / 6;
     }
 
-    #article1{
+    #section2container{
         grid-column: 1 / 13;
-		grid-row: 6 / 8;
+		grid-row: 6 / 10;
     }
 
-    #article2{
+    #section3container{
         grid-column: 1 / 13;
-		grid-row: 8 / 10;
+		grid-row: 10 / 14;
     }
-
     footer{
         grid-column: 1 / 13;
-		grid-row: 10 / 12;
+		grid-row: 14 / 16;
     }
 }
+
+
+
+
+/*Tablets*/
+
 
 /*header{
     grid-area: header;
