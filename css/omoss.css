@@ -35,18 +35,28 @@ header, footer{
     background-color: #8a3333;
 }
 
-header, footer, #mainpic, #maintext, #section2container{
+header, footer, #mainpic, #maintext{
 	min-height: 150px;
+}
+
+#section1container{
+    display: flex;
+    flex-direction: column;
 }
 
 #mainpic{
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
 #mainpic img{
-    width: 40%;
+    width: 35%;
     border-radius: var(--photo-border-radius);
+}
+
+#maintext{
+    padding: 0 20%;
 }
 
 #section2container{
@@ -89,9 +99,16 @@ header, footer, #mainpic, #maintext, #section2container{
     margin-top: 40px;
 }
 
-#article5{
+#section3container > h2
+{
     text-align: center;
-    font-size: x-large;
+    color: rgb(209, 198, 183);
+    font-size: 40px;
+}
+
+#article5{
+    display: flex;
+    justify-content: space-evenly;
     color: rgb(209, 198, 183);
 }
 
@@ -103,11 +120,13 @@ header, footer, #mainpic, #maintext, #section2container{
 #wallstreetjournal{
     font-family: "desire_regular";
     font-size: 60px;
+    margin-top: 15px;
 }
 
 #newyorktimes{
     font-family: "flying_dutchman";
     font-size: 60px;
+    margin-top: 48px;
 }
 
 #article6{
@@ -139,14 +158,9 @@ header, footer, #mainpic, #maintext, #section2container{
 		grid-row: 2 / 14;
     }
 
-    #mainpic{
+    #section1container{
         grid-column: 1 / 13;
-		grid-row: 2 / 4;
-    }
-
-    #maintext{
-        grid-column: 4 / 10;
-		grid-row: 4 / 6;
+		grid-row: 2 / 6;
     }
 
     #section2container{
@@ -174,20 +188,16 @@ header{
     grid-area: header;
 }
     
-#mainpic{
-    grid-area: mainpic;
+#section1container{
+    grid-area: section1container;
 }
 
-#maintext{
-    grid-area: maintext;
+#section2container{
+    grid-area: section2container;
 }
 
-#article1{
-    grid-area: article1;
-}
-
-#article2{
-    grid-area: article2;
+#section3container{
+    grid-area: section3container;
 }
 
 footer{
