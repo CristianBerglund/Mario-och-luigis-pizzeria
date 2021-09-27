@@ -128,6 +128,7 @@ header, footer, #mainpic, #maintext, #section2container{
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: auto;
 	}
+
 	header{
 		grid-column: 1 / 13;
 		grid-row: 1 / 2;
@@ -135,7 +136,7 @@ header, footer, #mainpic, #maintext, #section2container{
 
     main{
         grid-column: 1 / 13;
-		grid-row: 2 / 10;
+		grid-row: 2 / 14;
     }
 
     #mainpic{
@@ -167,9 +168,9 @@ header, footer, #mainpic, #maintext, #section2container{
 
 
 /*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
 
-
-/*header{
+header{
     grid-area: header;
 }
     
@@ -191,10 +192,7 @@ header, footer, #mainpic, #maintext, #section2container{
 
 footer{
     grid-area: footer;
-}/*
-
-/*Breda desktopskärmar*/
-/*@media screen and (min-width: 1201px){
+}
     
     #omosscontainer{
         grid-template-columns: repeat(12, 1fr);
@@ -208,4 +206,4 @@ footer{
         "footer footer footer footer footer footer footer footer footer footer footer footer"
         ;
     }
-}*/
+}
