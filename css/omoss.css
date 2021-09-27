@@ -6,6 +6,21 @@
     --photo-border-radius: 5%;
 }
 
+@font-face {
+    font-family: "VelinoText-Bold";
+    src: url("../Fonts/VelinoText-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "desire_regular";
+    src: url("../Fonts/desire_regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: "flying_dutchman";
+    src: url("../Fonts/flying_dutchman.woff") format('woff');
+}
+
 #omosscontainer{
     display: grid;
     row-gap: 20px;
@@ -71,12 +86,28 @@ header, footer, #mainpic, #maintext, #section2container{
 #section3container{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 #article5{
     text-align: center;
     font-size: x-large;
     color: rgb(209, 198, 183);
+}
+
+#forbes{
+    font-family: "VelinoText-Bold";
+    font-size: 60px;
+}
+
+#wallstreetjournal{
+    font-family: "desire_regular";
+    font-size: 60px;
+}
+
+#newyorktimes{
+    font-family: "flying_dutchman";
+    font-size: 60px;
 }
 
 #article6{
@@ -86,7 +117,7 @@ header, footer, #mainpic, #maintext, #section2container{
 }
 
 #article6 video{
-    width: 50%;
+    width: 45%;
 }
 
 
