@@ -65,14 +65,17 @@ header, footer, #mainpic, #maintext{
 }
 
 #article1{
-    flex-basis: 500px;
+    flex-basis: 450px;
     flex-grow: 1;
     padding: 10%;
 }
 
 #article2{
-    flex-basis: 400px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 240px;
     flex-grow: 1;
+    flex-shrink: 0;
 }
 
 #article2 img{
@@ -81,7 +84,7 @@ header, footer, #mainpic, #maintext{
 }
 
 #article3{
-    flex-basis: 500px;
+    flex-basis: 240px;
     flex-grow: 1;
 }
 
@@ -91,7 +94,7 @@ header, footer, #mainpic, #maintext{
 }
 
 #article4{
-    flex-basis: 400px;
+    flex-basis: 450px;
     flex-grow: 1;
     padding: 10%;
 }
@@ -254,24 +257,15 @@ footer{
 }
     
     #omosscontainer{
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns:  1, 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-        "header header header header header header header header header header header header"
-        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
-        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
-        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
-        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
-        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
-        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
-        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
-        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
-        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
-        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
-        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
-        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        "header"
+        "section1container"
+        "section2container"
+        "section3container"
+        "section4container"
+        "footer"
         ;
     }
     
