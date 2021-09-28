@@ -126,7 +126,6 @@ header, footer, #mainpic, #maintext{
 #newyorktimes{
     font-family: "flying_dutchman";
     font-size: 60px;
-    margin-top: 48px;
 }
 
 #article6{
@@ -152,11 +151,6 @@ header, footer, #mainpic, #maintext{
 		grid-column: 1 / 13;
 		grid-row: 1 / 2;
 	}
-
-    main{
-        grid-column: 1 / 13;
-		grid-row: 2 / 14;
-    }
 
     #section1container{
         grid-column: 1 / 13;
@@ -209,10 +203,20 @@ footer{
         grid-template-rows: auto;
         grid-template-areas:
         "header header header header header header header header header header header header"
-        "mainpic mainpic mainpic mainpic mainpic mainpic mainpic mainpic mainpic mainpic mainpic mainpic"
-        "maintext maintext maintext maintext maintext maintext maintext maintext maintext maintext maintext maintext"
-        "article1 article1 article1 article1 article1 article1 article1 article1 article1 article1 article1 article1"
-        "article2 article2 article2 article2 article2 article2 article2 article2 article2 article2 article2 article2"
+        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
+        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
+        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
+        "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
+        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
+        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
+        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
+        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
+        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
+        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
+        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
+        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
+        
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
         ;
     }
