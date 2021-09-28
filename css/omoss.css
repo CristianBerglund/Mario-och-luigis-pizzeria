@@ -35,7 +35,7 @@ header, footer{
     background-color: #8a3333;
 }
 
-header, footer, #mainpic, #maintext{
+#mainpic, #maintext{
 	min-height: 150px;
 }
 
