@@ -6,29 +6,22 @@
     display: grid;
     width: 90%;
     margin: 0 auto;
+    gap: 10px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
     "header header header header header header header header header header header header"
     ". . . . image image image image . . . ."
     "meny meny meny meny meny meny meny meny meny meny meny meny"
     ". . . . image2 image2 image2 image2 . . . ." 
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    "meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
 }
 
 h3 {
     text-align: center;
     font-style: italic;
     color: #a5210fce;
-}
-
-
-.box1,
-.box2,
-.box3,
-.box4 {
-     background-color: rgba(240, 239, 236, 0.795);
-     border: 1px solid black;
-     border-radius: 1%;
+    font-size: 24px;
 }
 
 header {
@@ -36,6 +29,11 @@ header {
 }
 footer {
     grid-area: footer;
+}
+
+.meny2 {
+    grid-area: meny2;
+    padding-bottom: 4%;
 }
 
 .meny {
@@ -57,16 +55,63 @@ footer {
     padding-bottom: 10%;
 }
 
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+     background-color: rgba(240, 239, 236, 0.795);
+     border: 1px solid black;
+     min-height: 150px;
+     border-radius: 1%;
+     font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    #container { 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "meny meny meny meny meny meny meny image image image image image"
+    "meny meny meny meny meny meny meny image image image image image"
+    "meny2 meny2 meny2 meny2 meny2 meny2 image2 image2 image2 image2 image2 image2" 
+    "meny2 meny2 meny2 meny2 meny2 meny2 image2 image2 image2 image2 image2 image2"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+
+    .meny2 {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container { 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "header"
+        "image"
+        "meny"
+        "image2"
+        "meny2"
+        "footer"
+        ;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+}
+
 .meny {
     display: flex;
     flex-flow: row wrap;
-    gap: 2%;
+	gap: 15px;
 }
 
 .box1,
 .box2,
 .box3,
 .box4 {
-    min-height: 150px;
-    flex: 1 1 300px;
+    flex: 1 1 220px;
 }
