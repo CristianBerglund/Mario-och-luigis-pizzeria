@@ -23,7 +23,7 @@
 
 #omosscontainer{
     display: grid;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 
 body{
@@ -59,28 +59,30 @@ header, footer, #mainpic, #maintext{
     padding: 0 20%;
 }
 
-#section2container{
+#section2container, #section3container{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 50px;
 }
 
 #article1{
-    width: 65%;
+    flex-basis: 500px;
+    flex-grow: 1;
     padding: 10%;
 }
 
 #article2{
-    width: 35%;
+    flex-basis: 400px;
+    flex-grow: 1;
 }
 
 #article2 img{
-    width: 70%;
+    width: 60%;
     border-radius: var(--photo-border-radius);
 }
 
 #article3{
-    width: 42.5%;
+    flex-basis: 500px;
+    flex-grow: 1;
 }
 
 #article3 img{
@@ -89,53 +91,49 @@ header, footer, #mainpic, #maintext{
 }
 
 #article4{
-    width: 57.5%;
+    flex-basis: 400px;
+    flex-grow: 1;
     padding: 10%;
 }
 
-#section3container{
-    display: flex;
-    flex-direction: column;
+#section4container{
+    display: grid;
     margin-top: 40px;
 }
 
-#section3container > h2
+#intro{
+    color: rgb(209, 198, 183);
+    font-size: 40px;
+    text-align: center;
+}
+
+#forbes, #wallstreetjournal, #newyorktimes
 {
     text-align: center;
     color: rgb(209, 198, 183);
-    font-size: 40px;
-}
-
-#article5{
-    display: flex;
-    justify-content: space-evenly;
-    color: rgb(209, 198, 183);
+    font-size: 60px;
 }
 
 #forbes{
     font-family: "VelinoText-Bold";
-    font-size: 60px;
 }
 
 #wallstreetjournal{
     font-family: "desire_regular";
-    font-size: 60px;
     margin-top: 15px;
 }
 
 #newyorktimes{
     font-family: "flying_dutchman";
-    font-size: 60px;
 }
 
 #article6{
     display: flex;
-    width: 100%;
     justify-content: center;
 }
 
 #article6 video{
-    width: 45%;
+    width: 40%;
 }
 
 
@@ -154,21 +152,54 @@ header, footer, #mainpic, #maintext{
 
     #section1container{
         grid-column: 1 / 13;
-		grid-row: 2 / 6;
+		grid-row: 2 / 3;
     }
 
     #section2container{
         grid-column: 1 / 13;
-		grid-row: 6 / 10;
+		grid-row: 3 / 4;
     }
 
     #section3container{
         grid-column: 1 / 13;
-		grid-row: 10 / 14;
+		grid-row: 4 / 5;
     }
+    
+    #section4container{
+        grid-column: 1 / 13;
+		grid-row: 5 / 6;
+        grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+    }
+
+    #intro{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    #forbes{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #wallstreetjournal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #newyorktimes{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #article6{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
     footer{
         grid-column: 1 / 13;
-		grid-row: 14 / 16;
+		grid-row: 6 / 7;
     }
 }
 
@@ -194,6 +225,30 @@ header{
     grid-area: section3container;
 }
 
+#section4container{
+    grid-area: section4container;
+}
+
+#intro{
+    grid-area: intro;
+}
+
+#forbes{
+    grid-area: forbes;
+}
+
+#wallstreetjournal{
+    grid-area: wallstreetjournal;
+}
+
+#newyorktimes{
+    grid-area: newyorktimes;
+}
+
+#article6{
+    grid-area: article6;
+}
+
 footer{
     grid-area: footer;
 }
@@ -209,15 +264,24 @@ footer{
         "section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container section1container"
         "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
         "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
-        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
-        "section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container section2container"
         "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
         "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
-        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
-        "section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container section3container"
-        
+        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
+        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
+        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
+        "section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container section4container"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
         ;
+    }
+    
+    #section4container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "intro intro intro intro"
+        "forbes forbes wallstreetjournal wallstreetjournal"
+        ". newyorktimes newyorktimes ."
+        "article6 article6 article6 article6"
     }
 }
