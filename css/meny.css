@@ -72,10 +72,10 @@ footer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
     "header header header header header header header header header header header header"
-    "meny meny meny meny meny meny meny image image image image image"
-    "meny meny meny meny meny meny meny image image image image image"
+    "header header header header header header header header header header header header"
+    ". . . . image image image image . . . ."
+    "meny meny meny meny meny meny meny meny meny meny meny meny"
     "meny2 meny2 meny2 meny2 meny2 meny2 image2 image2 image2 image2 image2 image2" 
-    "meny2 meny2 meny2 meny2 meny2 meny2 image2 image2 image2 image2 image2 image2"
     "footer footer footer footer footer footer footer footer footer footer footer footer"
         ;
     }
