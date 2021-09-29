@@ -48,7 +48,7 @@ ul {
     overflow: hidden;
     background-color: #8a3333;
     justify-content: flex-start;
-    align-items: right;
+    align-items: center;
   }
   
   li a {
@@ -68,4 +68,5 @@ ul {
     font-family:cursive;
     font-size: 20px;
     font-style: italic;
+    line-height: 1.5;
   }
