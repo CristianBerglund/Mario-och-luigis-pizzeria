@@ -1,12 +1,22 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .contact-container {
     width: 90%;
     margin: 0 auto;
+    border: 1px solid black;
     display: grid;
     grid-template-areas: "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1" "box2 box2 box2 box2 box3 box3 box3 box3 box4 box4 box4 box4";
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    border: 1px solid black;
 }
 
 .box1 {
@@ -26,15 +36,21 @@
 }
 
 ul {
-    width: 100%;
     list-style-type: none;
     margin: 0 auto;
     display: flex;
     height: 100%;
+    padding: 0;
+    background-color: #8a3333;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    width: 100%;
     justify-content: space-evenly;
 }
 
 h3 {
     width: 100%;
-    text-align: center;
 }
