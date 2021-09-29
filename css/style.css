@@ -49,10 +49,8 @@ ul {
     overflow: hidden;
     background-color: #8a3333;
     justify-content: flex-start;
-    align-items: center;
+    align-items: right;
   }
-  
-
   
   li a {
     display: block;
