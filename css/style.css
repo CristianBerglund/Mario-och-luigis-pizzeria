@@ -3,7 +3,6 @@
   src: url("../Fonts/Golden-Dream.woff2") format('woff2');
 }
 
-
 header, footer{
     background-color: #8a3333;
     width: 100%;
@@ -19,14 +18,8 @@ header{
     ". logo logo logo logo nav nav nav nav nav nav nav nav"
 }
 
-#logo {
-  grid-area: logo;
-  display: flex;
-}
-
-#logo > img {
-  width: 20%;
-  padding-bottom: 5%;  
+nav {
+  grid-area: nav;
 }
 
 #företagsnamn{
@@ -36,8 +29,14 @@ header{
   font-size: 30px;
 }
 
-nav {
-  grid-area: nav;
+#logo {
+  grid-area: logo;
+  display: flex;
+}
+
+#logo > img {
+  width: 20%;
+  padding-bottom: 5%;  
 }
 
 ul {
@@ -63,4 +62,10 @@ ul {
   
   li a:hover {
     color: rgb(185, 143, 143);
+  }
+
+  p{
+    font-family:cursive;
+    font-size: 20px;
+    font-style: italic;
   }

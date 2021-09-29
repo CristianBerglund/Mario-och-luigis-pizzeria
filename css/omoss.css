@@ -7,11 +7,6 @@
 }
 
 @font-face {
-    font-family: "Golden-Dream";
-    src: url("../Fonts/Golden-Dream.woff2") format('woff2');
-}
-
-@font-face {
     font-family: "VelinoText-Bold";
     src: url("../Fonts/VelinoText-Bold.woff") format('woff');
 }
@@ -65,7 +60,7 @@ header, footer{
 }
 
 #maintext{
-    padding: 0 20%;
+    padding: 0 22%;
 }
 
 #section2container, #section3container{
@@ -89,7 +84,7 @@ header, footer{
 }
 
 #article2 img{
-    width: 65%;
+    width: 55%;
     border-radius: var(--photo-border-radius);
 }
 
@@ -99,7 +94,7 @@ header, footer{
 }
 
 #article3 img{
-    width: 100%;
+    width: 90%;
     border-radius: var(--photo-border-radius);
 }
 
