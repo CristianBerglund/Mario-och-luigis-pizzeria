@@ -7,6 +7,11 @@
 }
 
 @font-face {
+    font-family: "Golden-Dream";
+    src: url("../Fonts/Golden-Dream.woff2") format('woff2');
+}
+
+@font-face {
     font-family: "VelinoText-Bold";
     src: url("../Fonts/VelinoText-Bold.woff") format('woff');
 }
@@ -19,6 +24,10 @@
 @font-face{
     font-family: "flying_dutchman";
     src: url("../Fonts/flying_dutchman.woff") format('woff');
+}
+
+#företagsnamn{
+    font-family: Golden-Dream;
 }
 
 #omosscontainer{
