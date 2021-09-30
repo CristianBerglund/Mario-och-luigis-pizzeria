@@ -64,13 +64,15 @@ body{
     flex-wrap: wrap;
 }
 
-#article1{
+#article1, #article2, #article3, #article4{
     display: flex;
-    flex-basis: 309px;
     flex-grow: 1;
+}
+
+#article1{
+    flex-basis: 309px;
     align-items: center;
     justify-content: flex-end;
-    flex-shrink: 0;
 }
 
 #article1 p{
@@ -78,10 +80,8 @@ body{
 }
 
 #article2{
-    display: flex;
     justify-content: center;
     flex-basis: 473px;
-    flex-grow: 1;
 }
 
 #article2 img{
@@ -90,21 +90,17 @@ body{
 }
 
 #article3{
-    display: flex;
-    flex-basis: 470px;
-    flex-grow: 1;
+    flex-basis: 660px;
     justify-content: center;
 }
 
 #article3 img{
-    width: 750px;
+    width: 650px;
     border-radius: var(--photo-border-radius);
 }
 
 #article4{
-    display: flex;
-    flex-basis: 330px;
-    flex-grow: 1;
+    flex-basis: 420px;
     margin: 0 5%;
     align-items: center;
 }
@@ -115,15 +111,16 @@ body{
 }
 
 #intro{
-    color: rgb(209, 198, 183);
     font-size: 40px;
+}
+
+#intro, #forbes, #wallstreetjournal, #newyorktimes{
+    color: rgb(209, 198, 183);
     text-align: center;
 }
 
 #forbes, #wallstreetjournal, #newyorktimes
 {
-    text-align: center;
-    color: rgb(209, 198, 183);
     font-size: 60px;
 }
 
