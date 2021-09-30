@@ -3,19 +3,34 @@
   src: url("../Fonts/Golden-Dream.woff2") format('woff2');
 }
 
+@font-face {
+  font-family: "VelinoText-Bold";
+  src: url("../Fonts/VelinoText-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "desire_regular";
+  src: url("../Fonts/desire_regular.woff") format('woff');
+}
+
+@font-face{
+  font-family: "flying_dutchman";
+  src: url("../Fonts/flying_dutchman.woff") format('woff');
+}
+
 header, footer{
-    background-color: #8a3333;
-    width: 100%;
-    min-height: 150px;
+  background-color: #8a3333;
+  width: 100%;
+  min-height: 150px;
 }
 
 header{
   display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-areas: 
-    "företagsnamn företagsnamn företagsnamn företagsnamn företagsnamn nav nav nav nav nav nav nav nav"
-    ". logo logo logo logo nav nav nav nav nav nav nav nav"
+  gap: 10px;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas: 
+  "företagsnamn företagsnamn företagsnamn företagsnamn företagsnamn nav nav nav nav nav nav nav nav"
+  ". logo logo logo logo nav nav nav nav nav nav nav nav"
 }
 
 nav {
@@ -25,7 +40,7 @@ nav {
 #företagsnamn{
   grid-area: företagsnamn;
   padding-left: 5%;
-  font-family: Golden-Dream;
+  font-family: "Golden-Dream";
   font-size: 30px;
 }
 
@@ -40,33 +55,50 @@ nav {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0 auto;
-    display: flex;
-    height: 100%;
-    padding: 0;
-    overflow: hidden;
-    background-color: #8a3333;
-    justify-content: flex-start;
-    align-items: center;
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8a3333;
+  justify-content: flex-start;
+  align-items: center;
   }
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 22px;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
   
-  li a:hover {
-    color: rgb(185, 143, 143);
-  }
+li a:hover {
+  color: rgb(185, 143, 143);
+  border-top: 1px solid aqua;
+}
 
-  p{
-    font-family:cursive;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 28px;
-  }
+p{
+  font-family: cursive;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#foodora, #apple, #google, #wolt, #address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#address p{
+  font-family: "desire_regular";
+  font-size: 30px;
+}
