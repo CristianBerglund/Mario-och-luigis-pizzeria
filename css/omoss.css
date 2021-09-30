@@ -21,10 +21,6 @@
     src: url("../Fonts/flying_dutchman.woff") format('woff');
 }
 
-#företagsnamn{
-    font-family: Golden-Dream;
-}
-
 #omosscontainer{
     display: grid;
     row-gap: 40px;
@@ -34,8 +30,9 @@ body{
     margin: 0 auto;
 }
 
-header, footer{
-    background-color: #8a3333;
+#minsida
+{
+    border-bottom: 1px solid aqua;
 }
 
 #mainpic, #maintext{
@@ -69,39 +66,46 @@ header, footer{
 
 #article1{
     display: flex;
-    flex-basis: 350px;
+    flex-basis: 309px;
     flex-grow: 1;
-    padding: 5%;
     align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+#article1 p{
+    margin-left: 15%;
 }
 
 #article2{
     display: flex;
     justify-content: center;
-    flex-basis: 340px;
+    flex-basis: 473px;
     flex-grow: 1;
 }
 
 #article2 img{
-    width: 45%;
+    width: 430px;
     border-radius: var(--photo-border-radius);
 }
 
 #article3{
-    flex-basis: 340px;
+    display: flex;
+    flex-basis: 470px;
     flex-grow: 1;
+    justify-content: center;
 }
 
 #article3 img{
-    width: 80%;
+    width: 750px;
     border-radius: var(--photo-border-radius);
 }
 
 #article4{
     display: flex;
-    flex-basis: 350px;
+    flex-basis: 330px;
     flex-grow: 1;
-    padding: 5%;
+    margin: 0 5%;
     align-items: center;
 }
 
