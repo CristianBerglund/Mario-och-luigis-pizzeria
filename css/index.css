@@ -87,3 +87,7 @@
   /* Responsive layout - makes a two column-layout instead of four columns */
 
   
+  #minsida
+  {
+      border-bottom: 1px solid aqua;
+  }
