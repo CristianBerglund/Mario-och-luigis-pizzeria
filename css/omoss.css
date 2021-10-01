@@ -120,9 +120,19 @@ body{
     text-align: center;
 }
 
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 #forbes, #wallstreetjournal, #newyorktimes
 {
     font-size: 60px;
+}
+
+#forbes:hover, #wallstreetjournal:hover, #newyorktimes:hover
+{
+    transform: scale(1.03);
 }
 
 #forbes{
@@ -136,6 +146,7 @@ body{
 
 #newyorktimes{
     font-family: "flying_dutchman";
+    margin-right: 9px;
 }
 
 #article6{

@@ -8,6 +8,14 @@
   src: url("../Fonts/desire_regular.woff") format('woff');
 }
 
+/*#omosscontainer{
+  background: linear-gradient(0deg, #8a3333, #FFFFFF, #FFFFFF, #FFFFFF, #8a3333);
+}*/
+
+/*#omosscontainer{
+  background: repeating-linear-gradient(90deg, green 0%, green 33.33%, white 33.33%, white 66.66%, red 66.66%, red 99.99%);
+}*/
+
 header, footer{
   background-color: #8a3333;
   width: 100%;
@@ -41,7 +49,7 @@ nav {
 
 #logo > img {
   width: 20%;
-  padding-bottom: 5%;  
+  padding-bottom: 5%;
 }
 
 ul {
@@ -92,6 +100,10 @@ footer{
 #address p{
   font-family: "desire_regular";
   font-size: 30px;
+}
+
+#foodora img:hover, #apple img:hover, #google img:hover, #wolt img:hover, #address:hover{
+  transform: scale(1.05);
 }
 
 /* Facebook*/
