@@ -3,6 +3,7 @@
 }
 
 #container {
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF, #FFFFFF, #FFFFFF, #7e4949);
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(12, 1fr);
