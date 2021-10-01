@@ -4,18 +4,8 @@
 }
 
 @font-face {
-  font-family: "VelinoText-Bold";
-  src: url("../Fonts/VelinoText-Bold.woff") format('woff');
-}
-
-@font-face {
   font-family: "desire_regular";
   src: url("../Fonts/desire_regular.woff") format('woff');
-}
-
-@font-face{
-  font-family: "flying_dutchman";
-  src: url("../Fonts/flying_dutchman.woff") format('woff');
 }
 
 header, footer{
