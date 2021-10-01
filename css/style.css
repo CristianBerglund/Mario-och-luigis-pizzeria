@@ -8,9 +8,9 @@
   src: url("../Fonts/desire_regular.woff") format('woff');
 }
 
-/*#omosscontainer{
+#omosscontainer{
   background: linear-gradient(0deg, #8a3333, #FFFFFF, #FFFFFF, #FFFFFF, #8a3333);
-}*/
+}
 
 /*#omosscontainer{
   background: repeating-linear-gradient(90deg, green 0%, green 33.33%, white 33.33%, white 66.66%, red 66.66%, red 99.99%);
