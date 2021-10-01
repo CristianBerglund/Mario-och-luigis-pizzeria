@@ -67,6 +67,10 @@ footer {
   font-size: 20px;
 }
 
+#minsida {
+    border-bottom: 1px solid aqua;
+}
+
 /*tablet responsiveness*/
 @media screen and (max-width: 961px) {
   #container {
@@ -100,6 +104,7 @@ footer {
   header {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   #logo {
